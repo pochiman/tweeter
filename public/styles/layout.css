@@ -3,7 +3,7 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-html {
+ html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -17,9 +17,61 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
+  margin-top: 120px;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+main {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+/* "Scroll back to the top" button */
+main button {
+  background-color: rgb(230, 47, 47);
+  position: fixed;
+  border: solid 1px #f4f1ec;
+  bottom: 2em;
+  right: 2em;
+  padding: .9em 1em 1.1em 1em;
+  display: flex;
+  align-content: center;
+  border-radius: 60%;
+  outline: none;
+}
+
+main button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  nav #tweeter {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  
+  body {
+    display: flex;
+  }
+
+  .your-account {
+    position: fixed;
+    width: 35%;
+    margin: 1em 1em 1em 2em;
+    padding-top: 1em;
+    border-radius: 5%;
+  }
+
+  main {
+    width: 50%;
+    margin-right: 2em;
+  }
+}
