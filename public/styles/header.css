@@ -1,0 +1,13 @@
+.your-account {
+  height: 400px;
+  left: 0;
+  right: 0;
+  background-color: #ffb400;
+background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+  text-align: center;
+}
+
+.your-account h2 {
+  position: relative;
+  bottom: 30px;
+}
